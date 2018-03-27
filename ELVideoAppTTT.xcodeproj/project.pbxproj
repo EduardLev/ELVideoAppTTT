@@ -7,14 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E47CCB173908DFB63E4436C /* Pods_ELVideoAppTTT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C3D6A1B15C22B60623CEA7B /* Pods_ELVideoAppTTT.framework */; };
 		D47B922920697C7700606D88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47B922820697C7700606D88 /* AppDelegate.swift */; };
 		D47B922B20697C7700606D88 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47B922A20697C7700606D88 /* ViewController.swift */; };
 		D47B922E20697C7700606D88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D47B922C20697C7700606D88 /* Main.storyboard */; };
 		D47B923020697C7700606D88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D47B922F20697C7700606D88 /* Assets.xcassets */; };
 		D47B923320697C7700606D88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D47B923120697C7700606D88 /* LaunchScreen.storyboard */; };
+		D47B923D20698AD800606D88 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47B923C20698AD800606D88 /* DataController.swift */; };
+		D47B923F206A949000606D88 /* VideoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47B923E206A949000606D88 /* VideoCollectionViewCell.swift */; };
+		D47B9241206A9C5700606D88 /* CaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47B9240206A9C5700606D88 /* CaptureViewController.swift */; };
+		D47B9243206A9D6700606D88 /* QuickLookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47B9242206A9D6700606D88 /* QuickLookViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C3D6A1B15C22B60623CEA7B /* Pods_ELVideoAppTTT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ELVideoAppTTT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE3FC1E0F795CE28F0D4BC2F /* Pods-ELVideoAppTTT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ELVideoAppTTT.release.xcconfig"; path = "Pods/Target Support Files/Pods-ELVideoAppTTT/Pods-ELVideoAppTTT.release.xcconfig"; sourceTree = "<group>"; };
 		D47B922520697C7700606D88 /* ELVideoAppTTT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ELVideoAppTTT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D47B922820697C7700606D88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D47B922A20697C7700606D88 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +29,11 @@
 		D47B922F20697C7700606D88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D47B923220697C7700606D88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D47B923420697C7700606D88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D47B923C20698AD800606D88 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		D47B923E206A949000606D88 /* VideoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCollectionViewCell.swift; sourceTree = "<group>"; };
+		D47B9240206A9C5700606D88 /* CaptureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureViewController.swift; sourceTree = "<group>"; };
+		D47B9242206A9D6700606D88 /* QuickLookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickLookViewController.swift; sourceTree = "<group>"; };
+		F579E9586E4F9C0E495805FD /* Pods-ELVideoAppTTT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ELVideoAppTTT.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ELVideoAppTTT/Pods-ELVideoAppTTT.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E47CCB173908DFB63E4436C /* Pods_ELVideoAppTTT.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		253EBA8CB032473E892266D0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F579E9586E4F9C0E495805FD /* Pods-ELVideoAppTTT.debug.xcconfig */,
+				BE3FC1E0F795CE28F0D4BC2F /* Pods-ELVideoAppTTT.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		89116ED0B97756514322117D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C3D6A1B15C22B60623CEA7B /* Pods_ELVideoAppTTT.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D47B921C20697C7700606D88 = {
 			isa = PBXGroup;
 			children = (
 				D47B922720697C7700606D88 /* ELVideoAppTTT */,
 				D47B922620697C7700606D88 /* Products */,
+				253EBA8CB032473E892266D0 /* Pods */,
+				89116ED0B97756514322117D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,8 +87,12 @@
 			isa = PBXGroup;
 			children = (
 				D47B922820697C7700606D88 /* AppDelegate.swift */,
+				D47B923E206A949000606D88 /* VideoCollectionViewCell.swift */,
 				D47B922A20697C7700606D88 /* ViewController.swift */,
+				D47B9240206A9C5700606D88 /* CaptureViewController.swift */,
+				D47B923C20698AD800606D88 /* DataController.swift */,
 				D47B922C20697C7700606D88 /* Main.storyboard */,
+				D47B9242206A9D6700606D88 /* QuickLookViewController.swift */,
 				D47B922F20697C7700606D88 /* Assets.xcassets */,
 				D47B923120697C7700606D88 /* LaunchScreen.storyboard */,
 				D47B923420697C7700606D88 /* Info.plist */,
@@ -71,9 +107,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D47B923720697C7700606D88 /* Build configuration list for PBXNativeTarget "ELVideoAppTTT" */;
 			buildPhases = (
+				FBA0D669749560AD8A4A0860 /* [CP] Check Pods Manifest.lock */,
 				D47B922120697C7700606D88 /* Sources */,
 				D47B922220697C7700606D88 /* Frameworks */,
 				D47B922320697C7700606D88 /* Resources */,
+				D2850A65D873E4ED30B1AB9F /* [CP] Embed Pods Frameworks */,
+				E2225E18E3A5ABFFAB023A3D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -97,6 +136,11 @@
 					D47B922420697C7700606D88 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -131,13 +175,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D2850A65D873E4ED30B1AB9F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ELVideoAppTTT/Pods-ELVideoAppTTT-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2225E18E3A5ABFFAB023A3D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ELVideoAppTTT/Pods-ELVideoAppTTT-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBA0D669749560AD8A4A0860 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ELVideoAppTTT-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D47B922120697C7700606D88 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D47B922B20697C7700606D88 /* ViewController.swift in Sources */,
+				D47B9241206A9C5700606D88 /* CaptureViewController.swift in Sources */,
+				D47B923D20698AD800606D88 /* DataController.swift in Sources */,
+				D47B9243206A9D6700606D88 /* QuickLookViewController.swift in Sources */,
 				D47B922920697C7700606D88 /* AppDelegate.swift in Sources */,
+				D47B923F206A949000606D88 /* VideoCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +371,7 @@
 		};
 		D47B923820697C7700606D88 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F579E9586E4F9C0E495805FD /* Pods-ELVideoAppTTT.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +387,7 @@
 		};
 		D47B923920697C7700606D88 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE3FC1E0F795CE28F0D4BC2F /* Pods-ELVideoAppTTT.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
