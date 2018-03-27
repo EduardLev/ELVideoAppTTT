@@ -406,7 +406,36 @@ class CaptureViewController: UIViewController {
         }
     }
 
+    func getCurrentTime() -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd-HH:mm:ss"
+        let dateString = dateFormatter.string(from: Date())
+        return dateString
+    }
+
+    func savePhotoToDocuments(image: UIImage) -> Bool {
+        do {
+            let documentDirectory = getDocumentsDirectory()
+            let name = getCurrentTime()
+            let fileURL = documentDirectory.appendingPathComponent(name)
+            if let imageData = UIImageJPEGRepresentation(image, 0.5) {
+                try imageData.write(to: fileURL)
+                return true
+            }
+        } catch {
+            print("Error writing to documents: \(error.localizedDescription)")
+        }
+        return false
+    }
+
+    func getDocumentsDirectory() -> URL {
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        let documentsDirectory = paths[0]
+        return documentsDirectory
+    }
+
     func savePhotoToLibrary(image: UIImage) {
+        savePhotoToDocuments(image: image)
         let photoLibrary = PHPhotoLibrary.shared()
         photoLibrary.performChanges({
             PHAssetChangeRequest.creationRequestForAsset(from: image)
@@ -477,7 +506,22 @@ class CaptureViewController: UIViewController {
         }
     }
 
+    func saveMovieToDocuments(movieURL: NSURL) -> Bool {
+        do {
+            let documentDirectory = getDocumentsDirectory()
+            let name = getCurrentTime()
+            let fileURL = documentDirectory.appendingPathComponent("\(name).mov")
+            let movieData = try? Data.init(contentsOf: movieURL as URL)
+            try movieData?.write(to: fileURL)
+            return true
+        } catch {
+            print("Error writing to documents: \(error.localizedDescription)")
+    }
+        return false
+}
+
     func saveMovieToLibrary(movieURL: NSURL) {
+        self.saveMovieToDocuments(movieURL: movieURL)
         let photoLibrary = PHPhotoLibrary.shared()
         photoLibrary.performChanges({
             PHAssetChangeRequest.creationRequestForAssetFromVideo(atFileURL: movieURL as URL)

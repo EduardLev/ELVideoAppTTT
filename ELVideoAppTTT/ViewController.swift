@@ -25,6 +25,8 @@ class ViewController: UIViewController {
     var activeInput: AVCaptureDeviceInput!
     let imageOutput = AVCapturePhotoOutput()
 
+    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -66,6 +68,7 @@ class ViewController: UIViewController {
         self.present(imagePickerController, animated: true, completion: nil)
     }
 
+    // changed to camera button
     @IBAction func addRemoteStreamButtonDidTouchUpInside(_ sender: UIButton) {
         if let cameraVC = storyboard?.instantiateViewController(withIdentifier: "captureViewController") {
             present(cameraVC, animated: true)
@@ -113,9 +116,7 @@ class ViewController: UIViewController {
             let playerViewController = AVPlayerViewController()
             playerViewController.allowsPictureInPicturePlayback = true
             playerViewController.player = queuePlayer
-
             present(playerViewController, animated: true, completion: nil)
-
             queue = []
         }
     }
@@ -135,7 +136,9 @@ class ViewController: UIViewController {
     // MARK: Helper Functions - Move to Singleton
     func addVideoPathToURLList(videoPath: URL) {
         self.videoFilepaths.append(videoPath)
-        self.collectionView.reloadData()
+        if (self.collectionView != nil) {
+            self.collectionView.reloadData()
+        }
     }
 
     func getThumbnailImageFromVideo(url: URL) -> UIImage? {
@@ -169,6 +172,10 @@ extension ViewController: UIImagePickerControllerDelegate, UINavigationControlle
 
     @IBAction func unwindToCollectionView(segue: UIStoryboardSegue) {
         // unwind to this
+        print("this is happening")
+        let fileVC = segue.source as! PhotoLibraryCollectionViewController
+        let videoPath = fileVC.fileURLS[fileVC.currentRow]
+        self.addVideoPathToURLList(videoPath: videoPath)
     }
 }
 

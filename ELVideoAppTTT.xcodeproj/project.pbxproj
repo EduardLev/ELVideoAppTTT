@@ -17,6 +17,8 @@
 		D47B923F206A949000606D88 /* VideoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47B923E206A949000606D88 /* VideoCollectionViewCell.swift */; };
 		D47B9241206A9C5700606D88 /* CaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47B9240206A9C5700606D88 /* CaptureViewController.swift */; };
 		D47B9243206A9D6700606D88 /* QuickLookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47B9242206A9D6700606D88 /* QuickLookViewController.swift */; };
+		D4E28822206AC61F006BED58 /* PhotoLibraryCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E28821206AC61F006BED58 /* PhotoLibraryCollectionViewController.swift */; };
+		D4E28824206AC6D2006BED58 /* FileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E28823206AC6D2006BED58 /* FileCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		D47B923E206A949000606D88 /* VideoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCollectionViewCell.swift; sourceTree = "<group>"; };
 		D47B9240206A9C5700606D88 /* CaptureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureViewController.swift; sourceTree = "<group>"; };
 		D47B9242206A9D6700606D88 /* QuickLookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickLookViewController.swift; sourceTree = "<group>"; };
+		D4E28821206AC61F006BED58 /* PhotoLibraryCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibraryCollectionViewController.swift; sourceTree = "<group>"; };
+		D4E28823206AC6D2006BED58 /* FileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileCollectionViewCell.swift; sourceTree = "<group>"; };
 		F579E9586E4F9C0E495805FD /* Pods-ELVideoAppTTT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ELVideoAppTTT.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ELVideoAppTTT/Pods-ELVideoAppTTT.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,6 +96,8 @@
 				D47B9240206A9C5700606D88 /* CaptureViewController.swift */,
 				D47B923C20698AD800606D88 /* DataController.swift */,
 				D47B922C20697C7700606D88 /* Main.storyboard */,
+				D4E28823206AC6D2006BED58 /* FileCollectionViewCell.swift */,
+				D4E28821206AC61F006BED58 /* PhotoLibraryCollectionViewController.swift */,
 				D47B9242206A9D6700606D88 /* QuickLookViewController.swift */,
 				D47B922F20697C7700606D88 /* Assets.xcassets */,
 				D47B923120697C7700606D88 /* LaunchScreen.storyboard */,
@@ -235,7 +241,9 @@
 				D47B9241206A9C5700606D88 /* CaptureViewController.swift in Sources */,
 				D47B923D20698AD800606D88 /* DataController.swift in Sources */,
 				D47B9243206A9D6700606D88 /* QuickLookViewController.swift in Sources */,
+				D4E28822206AC61F006BED58 /* PhotoLibraryCollectionViewController.swift in Sources */,
 				D47B922920697C7700606D88 /* AppDelegate.swift in Sources */,
+				D4E28824206AC6D2006BED58 /* FileCollectionViewCell.swift in Sources */,
 				D47B923F206A949000606D88 /* VideoCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
